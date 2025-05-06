@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREWSADE | Premium Clothing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="logo/WhatsApp Image 2025-04-16 at 14.19.24_4b73dc4f.jpg" alt="crewsade Logo" class="logo">
+        </div>
+        
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#vlog">VLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-actions">
+            <div class="country-selector">
+                <div class="select-wrapper">
+                    <select id="country-select">
+                        <option value="">GH</option>
+                        <option value="">NG</option>
+                        <option value="">US</option>
+                        <option value="">UK</option>
+                    </select>
+                    <span class="flag-icon" id="selected-flag">🇬🇭</span>
+                </div>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+        
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#shop">SHOP</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#vlog">VLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="hero">
+                <div class="slideshow-container">
+                    <!-- Remove or comment out these arrow buttons -->
+                    <!-- 
+                    <button class="slide-arrow prev-slide">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slide-arrow next-slide">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    -->
+                    
+                    <!-- Animated Heading -->
+                    <h3 class="animated-heading"><em><strong></strong></em></h3>
+                    
+                    <!-- Slideshow images -->
+                    <div class="slides-wrapper">
+                        <div class="slide fade">
+                            <img 
+                                src="slideshow/WhatsApp Image 2025-04-16 at 14.19.27_2cdbf627.jpg" 
+                                alt="Fashion Slide 1"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="slide fade">
+                            <img src="slideshow/WhatsApp Image 2025-04-16 at 14.19.29_0d6d56f1.jpg" alt="Fashion Slide 2">
+                        </div>
+                        <div class="slide fade">
+                            <img src="slideshow/WhatsApp Image 2025-04-16 at 14.19.29_85f572fc.jpg" alt="Fashion Slide 3">
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation dots -->
+                    <div class="dots-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+                
+                <div class="hero-content">
+                    <h1>YOUR WISH AIN'T NOTHING</h1>
+                    <a href="#shop" class="btn">SHOP NOW</a>
+                </div>
+            </div>
+            
+            <div class="new-arrivals">
+                <h2>NEW ARRIVALS</h2>
+                <div class="arrival-grid">
+                    <!-- Item 1 -->
+                    <div class="arrival-item">
+                        <div class="product-images">
+                            <img src="new arrivals/WhatsApp Image 2025-04-16 at 14.19.26_e5f5a917.jpg" class="product-image active" alt="Product View 1">
+                            <img src="new arrivals/WhatsApp Image 2025-04-16 at 14.19.28_5d2e7d26.jpg" class="product-image" alt="Product View 2">
+                        </div>
+                        <h3>Summer Tee</h3>
+                        <p class="price" data-base-price="25.99">$25.99</p>
+                        <button class="add-to-cart" data-name="Summer Tee" data-price="25.99">Add to Cart</button>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="arrival-item">
+                        <div class="product-images">
+                            <img src="new arrivals/WhatsApp Image 2025-04-16 at 14.19.26_e5f5a917.jpg" class="product-image active" alt="Product View 1">
+                            <img src="new arrivals/WhatsApp Image 2025-04-16 at 14.19.28_5d2e7d26.jpg" class="product-image" alt="Product View 2">
+                        </div>
+                        <h3>Summer Tee</h3>
+                        <p class="price" data-base-price="25.99">$25.99</p>
+                        <button class="add-to-cart" data-name="Summer Tee" data-price="25.99">Add to Cart</button>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="arrival-item">
+                        <div class="product-images">
+                            <img src="new arrivals/WhatsApp Image 2025-04-16 at 14.19.26_e5f5a917.jpg" class="product-image active" alt="Product View 1">
+                            <img src="new arrivals/WhatsApp Image 2025-04-16 at 14.19.28_5d2e7d26.jpg" class="product-image" alt="Product View 2">
+                        </div>
+                        <h3>Summer Tee</h3>
+                        <p class="price" data-base-price="25.99">$25.99</p>
+                        <button class="add-to-cart" data-name="Summer Tee" data-price="25.99">Add to Cart</button>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="arrival-item">
+                        <div class="product-images">
+                            <img src="new arrivals/WhatsApp Image 2025-04-16 at 14.19.26_e5f5a917.jpg" class="product-image active" alt="Product View 1">
+                            <img src="new arrivals/WhatsApp Image 2025-04-16 at 14.19.28_5d2e7d26.jpg" class="product-image" alt="Product View 2">
+                        </div>
+                        <h3>Summer Tee</h3>
+                        <p class="price" data-base-price="25.99">$25.99</p>
+                        <button class="add-to-cart" data-name="Summer Tee" data-price="25.99">Add to Cart</button>
+                    </div>
+            <div class="about">
+                <h2>ABOUT US</h2>
+                <p>CREWSADE is a premium clothing brand dedicated to providing high-quality, stylish apparel for the modern individual.</p>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop" class="section">
+            <h2>SHOP</h2>
+            <div class="shop-grid">
+                <!-- Items loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <h2>GALLERY</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="gallary/WhatsApp Image 2025-04-16 at 14.19.22_77857b50.jpg" alt="Gallery Item 1" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="gallary/WhatsApp Image 2025-04-16 at 14.19.23_fecfaca8.jpg" alt="Gallery Item 2" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="gallary/WhatsApp Image 2025-04-16 at 14.19.24_4bd75a6d.jpg" alt="Gallery Item 3" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="gallary/WhatsApp Image 2025-04-16 at 14.19.25_4ef4cb89.jpg" alt="Gallery Item 4" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="gallary/WhatsApp Image 2025-04-16 at 14.19.27_55ba89bc.jpg" alt="Gallery Item 5" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="gallary/WhatsApp Image 2025-04-16 at 14.19.28_17fb1dea.jpg" alt="Gallery Item 6" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Vlog Section -->
+        <section id="vlog" class="section">
+            <h2>VLOG</h2>
+            <div class="vlog-container">
+                <div class="vlog-post">
+                    <div class="video-container">
+                        <iframe src="" frameborder="0" allowfullscreen></iframe>
+                    </div><br>
+
+                    <div class="video-container">
+                        <iframe src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <h3>Spring Collection Lookbook</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>CONTACT US</h2>
+            <div class="contact-methods">
+                <a href="https://wa.me/+233508174381" class="contact-link whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://instagram.com/YOUR_INSTAGRAM" class="contact-link instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="mailto:YOUR_EMAIL" class="contact-link email">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="tel:+233508174381" class="contact-link phone">
+                    <i class="fas fa-phone"></i> Call Us
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items loaded dynamically -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span class="total-amount">$0.00</span></p>
+            </div>
+            <button class="proceed-to-purchase">Proceed to Purchase</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ABOUT CREWSADE</h3>
+                <p>Premium clothing brand providing high-quality, stylish apparel for the modern individual.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#vlog">Vlog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                    <div class="newsletter-message"></div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Urban Threads. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="#">Shipping Info</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
